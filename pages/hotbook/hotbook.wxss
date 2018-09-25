@@ -1,0 +1,22 @@
+.btn {
+  width: 40%;
+}
+
+.sideview {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text_num {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #FF4500;
+}

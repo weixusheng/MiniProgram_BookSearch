@@ -1,0 +1,56 @@
+{
+  "pages": [
+    
+    "pages/book/book",
+    "pages/book/info",
+    "pages/book/bookdetail",
+    "pages/book/bookinf",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/libinfo/libinfo",
+    "pages/buildinfo/buildinfo",
+    "pages/swiper/swiper",
+    "pages/personal/personal",
+    "pages/perinfo/perinfo",
+    "pages/newbook/newbook",
+    "pages/notice/notice",
+    "pages/hotbook/hotbook"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "#BDBDBD",
+    "navigationBarBackgroundColor": "#CCFFFF",
+    "navigationBarTitleText": "东北电力大学",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#C4C4C4",
+    "selectedColor": "#C2C2C2",
+    "list": [
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "图书位置分布",
+        "iconPath": "pages/images/lib16.png",
+        "selectedIconPath": "pages/images/lib15.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "检索",
+        "iconPath": "pages/images/lib44.png",
+        "selectedIconPath": "pages/images/lib4.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "开闭馆通知",
+        "iconPath": "pages/images/lib20.png",
+        "selectedIconPath": "pages/images/lib21.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "pages/images/lib12.png",
+        "selectedIconPath": "pages/images/lib11.png"
+      }
+    ]
+  }
+}

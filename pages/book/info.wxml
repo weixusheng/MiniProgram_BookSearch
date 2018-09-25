@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">自管会介绍</view>
+        <view class="page__desc">自管会网新部</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        东北电力大学图书馆学生自我管理委员会（简称“自管会”）成立于2015年9月，构成人员为东北电力大学全日制大学生，下设服务部、督导部、宣传部、活动策划部、秘书处、读书部、网络新媒体部。自管会所有成员自愿服务广大读者。自管会的目标是：图书馆在学生自我管理的情况下形成良好的学习氛围与优质的读书环境。
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../book/image/logo.jpg" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+<view class="weui-article__p">我们保证教学周内的每一天，都会有自管会成员在图书馆为您服务，工作时我们将会佩戴自管会工作证。我们的主要职责是：</view>
+<view class="weui-article__p">（1） 主动参与图书馆的管理及维护，协助图书馆建设“文明、有序、安静、整洁”的学习环境。 </view>
+<view class="weui-article__p">  （2） 主动了解、评估图书馆各部门的工作细节、服务态度和服务质量。 </view>
+<view class="weui-article__p">（3） 组织开展读者调查，征求广大师生对图书馆管理的意见与建议。 </view>
+<view class="weui-article__p"> （4）  参与图书馆书库及公共设施的管理和运用，引导广大师生更好使用图书馆资源。  </view>
+<view class="weui-article__p"> （5）  维护广大读者利益，为读者营造更好的学习氛围。做好图书馆安排的其他事项。在自管会管理图书馆时遇到的问题也恳请您积极配合。</view>
+
+
+<view class="weui-article__p">同时您遇到任何问题都可以随时找自管会值班人员寻求帮助，我们将竭诚为您服务，您也可以将您的一切意见与见解告诉给我们（值班人员即可），我们会积极反馈给馆领导。在此也希望各位读者朋友们可以做到以下几点： </view>
+ <view class="weui-article__p">（1） 举止文明，遵守图书馆规章制度； </view>
+  <view class="weui-article__p">（2） 爱护环境，不乱丢垃圾，不大声喧哗； </view>
+   <view class="weui-article__p">（3） 热爱图书，热爱图书馆，积极维护图书馆良好环境； </view>
+    <view class="weui-article__p">今后自管会将开展更多活动，发掘与展示图书馆的魅力，致力成为您与图书馆沟通之间的桥梁与纽带。希望与您一同为校园文化建设贡献一份力量！ </view>
+
+   <view class="text_date"> 2016年6月14日 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

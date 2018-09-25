@@ -1,0 +1,18 @@
+@import './com_styles/common.wxss';
+@import './com_styles/animate.wxss';
+
+@import './com_styles/actionsheet.wxss';
+@import './com_styles/backdrop.wxss';
+@import './com_styles/button.wxss';
+@import './com_styles/calendar.wxss';
+@import './com_styles/dialog.wxss';
+@import './com_styles/gallery.wxss';
+@import './com_styles/notification.wxss';
+@import './com_styles/picker.wxss';
+@import './com_styles/prompt.wxss';
+@import './com_styles/rater.wxss';
+@import './com_styles/refresher.wxss';
+@import './com_styles/seats.wxss';
+@import './com_styles/toast.wxss';
+@import './com_styles/toptips.wxss';
+@import './com_styles/xnumber.wxss';

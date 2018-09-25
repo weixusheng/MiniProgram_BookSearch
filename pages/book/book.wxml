@@ -1,0 +1,54 @@
+<import src="../../components/button/button.wxml"/>
+<template is="button" data="{{ ...$wux.button.br }}"/>
+<import src="../../components/backdrop/backdrop.wxml"/>
+<template is="backdrop" data="{{ ...$wux.backdrop }}"/>
+
+<view class='center'>
+<image class="weui-article__img center" src="../book/image/logo2.jpg" mode="aspectFit" style="height: 80px" />
+<view class='title_font' >图书馆书籍检索小程序</view>
+</view>
+
+<view class="page">
+
+  <view class="page__bd_book">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{page_bookname}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{page_bookname.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+  </view>
+</view>
+
+<view class='.btnview'>
+  <view class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
+    {{searchLog}}
+  </view>
+</view>
+
+
+<view class='book_button'>
+  <view class='btnview'>
+    <button class='btn' bindtap='buttonreq' type="primary" plain="true">查询</button>
+  </view>
+</view>
+
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__links">
+    <navigator url="/pages/book/info" class="weui-footer__link">东北电力大学图书馆自管会</navigator>
+  </view>
+  <view class="weui-footer__text">开发版本V1.6(魏绪升)</view>
+  <view class="weui-footer__text">Copyright© 1995-2018 ITL_Studio</view>
+</view>
+

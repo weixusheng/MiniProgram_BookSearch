@@ -1,0 +1,26 @@
+<view class="page">
+    <view class="page__bd" wx:for="{{bookarr}}" wx:key="book_id">
+        <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.book_id}}">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">书名</view>
+                    <view class='text'>{{item.book_name}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd" >
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">介绍</view>
+                    <view class='text'>{{item.book_info}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">馆藏/可借</view>
+                    <view class='text'>{{item.book_num[0]}}</view>
+                </view>
+            </view>           
+        </view>       
+    </view>
+    <view class='sideview'>
+    <button class='btn' bindtap='headpage' hidden='{{headshow}}' type="primary" plain="true">上一页</button>
+    <button class='btn' bindtap='nextpage' hidden='{{nextshow}}' type="primary" plain="true">下一页</button>
+  </view>
+</view>

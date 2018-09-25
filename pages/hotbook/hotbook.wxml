@@ -1,0 +1,31 @@
+<view class="page">
+    <view class="page__bd" wx:for="{{bookarr}}" wx:key="id">
+        <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.id}}">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">书名</view>
+                    <view class='text'>{{item.book_name}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd" >
+            <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">作者</view>
+                    <view class='text'>{{item.book_author}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">出版社</view>
+                    <view class='text'>{{item.book_publisher}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">索书码</view>
+                    <view class='text'>{{item.book_find}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">累计借阅次数</view>
+                    <view class='text_num'>{{item.book_num}}</view>
+                </view>
+            </view>           
+        </view>       
+    </view>
+
+</view>
