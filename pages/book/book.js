@@ -204,10 +204,6 @@ Page({
       position: position,
       buttons: [
         {
-          label: '座位预约',
-          icon: "../book/image/yuyue.png",
-        },
-        {
           label: '新书速递',
           icon: "../book/image/book.png",
         },
@@ -217,17 +213,13 @@ Page({
         },
       ],
       buttonClicked(index, item) {
-        index === 0 && wx.showModal({
-          title: '新功能正在开发',
-          showCancel: !1,
-        })
 
-        index === 1 && wx.navigateTo({
+        index === 0 && wx.navigateTo({
           url: '/pages/newbook/newbook'
         })
 
         //index === 2 && wx.switchTab({
-        index === 2 && wx.navigateTo({
+        index === 1 && wx.navigateTo({
           url: '/pages/hotbook/hotbook'
         })
 

@@ -40,12 +40,6 @@
         "selectedIconPath": "pages/images/lib4.png"
       },
       {
-        "pagePath": "pages/notice/notice",
-        "text": "开闭馆通知",
-        "iconPath": "pages/images/lib20.png",
-        "selectedIconPath": "pages/images/lib21.png"
-      },
-      {
         "pagePath": "pages/personal/personal",
         "text": "个人中心",
         "iconPath": "pages/images/lib12.png",
