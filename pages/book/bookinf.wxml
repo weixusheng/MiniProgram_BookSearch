@@ -33,8 +33,8 @@
                     <view class="weui-media-box__title_book weui-media-box__title_in-text">提要文摘附注:</view>
                     <view class="weui-media-box__desc_book">{{info_data["提要文摘附注:"]}}</view>
                     <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta">中图法分类号:</view>
-                        <view class="weui-media-box__info__meta">{{info_data["中图法分类号:"]}}</view>
+                        <view class="weui-media-box__info__meta text_color3">中图法分类号:</view>
+                        <view class="weui-media-box__info__meta text_color3">{{info_data["中图法分类号:"]}}</view>
                         <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{info_data["载体形态项:"]}}</view>
                     </view>
                 </view>

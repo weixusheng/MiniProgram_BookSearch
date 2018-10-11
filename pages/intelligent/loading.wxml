@@ -1,0 +1,19 @@
+<view class="line_loading"></view>
+<view class="loading_box">
+  <view class="loading1"></view>
+</view>
+<view class="loading_box">
+  <view class="knock knock_first"></view>
+  <view class="knock"></view>
+  <view class="knock"></view>
+  <view class="knock"></view>
+  <view class="knock knock_last"></view>
+</view>
+<view class="loading_box" style='padding:0rpx;'>
+<text style='font-weight:bold;font-size:20px'>新功能正在开发中...</text>
+</view>
+<view class="loading_box">
+  <view class="loading_rotate_cube_parent">
+  <view class="loading_rotate_cube"></view>
+  </view>
+</view>

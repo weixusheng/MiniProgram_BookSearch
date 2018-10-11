@@ -118,7 +118,6 @@ Page({
   viewtap: function (e) {
     wx.navigateTo({
       url: '/pages/book/bookinf'
-      
     })
     console.log(e.currentTarget.dataset.id)
     getApp().globalData.bookid = e.currentTarget.dataset.id.substring(17)

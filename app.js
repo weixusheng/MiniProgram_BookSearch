@@ -36,6 +36,10 @@ App({
   globalData: {
     userInfo: null,
     main_data:'',
-    lock: 1
+    lock: 1,
+
+    test: '',
+    bookid: '',
+    href: '',
   },
 })

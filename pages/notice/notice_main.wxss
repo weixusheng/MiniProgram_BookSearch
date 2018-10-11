@@ -1,0 +1,28 @@
+.btn{
+width:40%
+}
+.sideview{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+}
+
+.text{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+.view{
+     padding-bottom: 0px;
+}
+
+.view1{
+     float: right;
+     margin-right: 0px;
+     font-size: 13px;
+}
+
+.view2{
+     text-align: left;
+}
+

@@ -5,7 +5,7 @@
 
 <view class='center'>
 <image class="weui-article__img center" src="../book/image/logo2.jpg" mode="aspectFit" style="height: 80px" />
-<view class='title_font' >图书馆书籍检索小程序</view>
+<view class='title_font' >图书馆书籍检索平台</view>
 </view>
 
 <view class="page">
@@ -46,9 +46,9 @@
 
 <view class="weui-footer weui-footer_fixed-bottom">
   <view class="weui-footer__links">
-    <navigator class="weui-footer__link">东北电力大学因特雷工作室</navigator>
+    <navigator class="weui-footer__link">因特雷工作室 · 54阳光网</navigator>
   </view>
-  <view class="weui-footer__text">开发版本V1.7(魏绪升)</view>
+  <view class="weui-footer__text">开发版本V1.8</view>
   <view class="weui-footer__text">Copyright© 1995-2018 ITL_Studio</view>
 </view>
 

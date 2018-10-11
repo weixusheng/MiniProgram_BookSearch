@@ -1,0 +1,32 @@
+<!--pages/about/about.wxml-->
+<view class='view'>
+<text style='font-weight:bold'>2018年10月10日更新---</text>
+<text style='font-weight:bold;color:#4169E1'>版本号:V1.8</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold;color:#FF4040'>1.小程序和54阳光网微信平台关联啦!!!</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>2.新增查看图书馆通知功能</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>3.新增查看小程序更新历史记录功能</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold;color:grey'>--------分割线--------</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>智能推荐功能正在开发中!</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>2.0版本将会有惊喜哈!</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold;color:grey'>-------又一个分割线-------</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>亲们有什么建议可以提出来哈</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold'>QQ:346339380</text>
+</view>
