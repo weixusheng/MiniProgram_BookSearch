@@ -1,0 +1,19 @@
+<view class="page">
+    <view class='tlt'>图书馆通知</view>
+    <view class='lin'></view>
+    <view class="page__bd view" wx:for="{{bookarr}}" wx:key="idd">
+      
+        <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.href}}">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label view1">{{item.date}}</view>
+                    <view class='text view2'>{{item.title}}</view>
+                </view>
+            </view>        
+        </view>       
+    </view>
+    <view class='sideview'>
+    <button class='btn' bindtap='headpage' hidden='{{headshow}}'>上一页</button>
+    <button class='btn' bindtap='nextpage' hidden='{{nextshow}}'>下一页</button>
+  </view>
+</view>

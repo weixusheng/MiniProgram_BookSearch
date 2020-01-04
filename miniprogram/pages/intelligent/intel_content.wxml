@@ -1,0 +1,41 @@
+<view class="page">
+    <view class="page__bd" wx:for="{{bookarr}}" wx:key="idd">
+        <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.idd}}">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">书名</view>
+                    <view class='text'>{{item.name}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd" >
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">馆藏</view>
+                    <view class='text'>{{item.sum}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">可借阅</view>
+                    <view class='text'>{{item.avi}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">出版年份</view>
+                    <view class='text'>{{item.pub_year}}</view>
+                </view>
+            </view>           
+        </view>       
+    </view>
+    <view class='sideview'>
+    <button class='btn' bindtap='headpage' hidden='{{headshow}}' type="primary" plain="true">上一页</button>
+    <button class='btn' bindtap='nextpage' hidden='{{nextshow}}' type="primary" plain="true">下一页</button>
+  </view>
+</view>
+
+<view style='visibility:{{view_show}}'>
+<!--pages/about/about.wxml-->
+<view class='view' >
+<text style='font-weight:bold'>欢迎使用智能推荐功能</text>
+</view>
+<view class='view'>
+<text style='font-weight:bold;color:#FF4040'>请下拉页面开始第一次使用配置</text>
+</view>
+
+</view>

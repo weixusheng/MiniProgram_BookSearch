@@ -1,0 +1,53 @@
+<view class="swiper-tab">
+  <view class="tab-item {{currentTab==0 ? 'on' : 'off'}}" data-current="0" bindtap="swichNav">书目位置</view>
+  <view class="tab-item {{currentTab==1 ? 'on' : 'off'}}" data-current="1" bindtap="swichNav">分布图</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 100%">
+      <view class="table">
+        <view class="tr_w bg-w">
+          <view class="th_w">部门</view>
+          <view class="th_w">地点</view>
+          <view class="th_w">书目</view>
+        </view>
+        <block wx:for="{{listData}}" wx:key="{{code}}">
+          <view class="tr bg-g">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+            <view class="td">{{item.type}}</view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 100%">
+      <view class="page__bd">
+        <view class="title">一楼</view>
+        <view class="section__ctn">
+          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/1floor.jpg"></image>
+        </view>
+        <view class="title">二楼</view>
+        <view class="section__ctn">
+          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/2floor.jpg"></image>
+        </view>
+        <view class="title">三楼</view>
+        <view class="section__ctn">
+          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/3floor.jpg"></image>
+        </view>
+        <view class="title">四楼</view>
+        <view class="section__ctn">
+          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/4floor.jpg"></image>
+        </view>
+        <view class="title">五楼</view>
+        <view class="section__ctn">
+          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/5floor.jpg"></image>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

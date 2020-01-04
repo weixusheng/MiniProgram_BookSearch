@@ -1,0 +1,47 @@
+.btn{
+width:400rpx;
+font-size: 13px;
+border-radius: 100rpx;
+color: #4f6b72;
+background-color: #cae8ea;
+} 
+.sideview{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  
+}
+
+.text{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+.view{
+     padding-bottom: 0px;
+}
+
+.view1{
+     float: right;
+     margin-right: 0px;
+     font-size: 12px;
+}
+
+.view2{
+     text-align: left;
+     font-size: 13px;
+}
+
+.tlt{
+  font-size: 40rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.lin{
+  height: 2rpx;
+   background-color: cadetblue;
+}
+.page{
+  width: 90%;
+  margin: 0 auto;
+}

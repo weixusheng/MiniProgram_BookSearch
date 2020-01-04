@@ -1,0 +1,44 @@
+<import src="../../components/notification/notification.wxml"/>
+<template is="notification" data="{{ ...$wux.notification }}"/>
+<view class="page">
+     <view class="page__hd">
+          <view class="page__title">亲爱的{{nickName}}</view>
+          <view class="page__desc">欢迎您使用智能书籍推荐系统</view>
+     </view>
+
+     <view class="page__bd">
+          <view class="weui-panel weui-panel_access">
+               <view class="weui-panel__hd text_color">第一次使用请选择下列中你喜欢的三个图书类别</view>
+               <view class="weui-panel__bd view_padding">
+                    <view class='.btnview'>
+                         <view class="search-log {{class_list['长篇小说']}}" bindtap='view_tap' data-log="0">
+                              长篇小说
+                         </view>
+                         <view class="search-log {{class_list['JAVA语言']}}" bindtap='view_tap' data-log="1">
+                              JAVA语言
+                         </view>
+                         <view class="search-log {{class_list['电力系统']}}" bindtap='view_tap' data-log="2">
+                              电力系统
+                         </view>
+                         <view class="search-log {{class_list['算法语言']}}" bindtap='view_tap' data-log="3">
+                              算法语言
+                         </view>
+                         <view class="search-log {{class_list['成功心理学']}}" bindtap='view_tap' data-log="4">
+                              成功心理学
+                         </view>
+                         <view class="search-log {{class_list['中国历史']}}" bindtap='view_tap' data-log="5">
+                              中国历史
+                         </view>
+                    </view>
+               </view>
+               <view class="weui-panel__ft">
+                    <view class="weui-cell weui-cell_access weui-cell_link" bindtap='next_step'>
+                         <view class="weui-cell__bd ">
+                              <view class="view_right">下一步</view>
+                         </view>
+                         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </view>
+               </view>
+          </view>
+     </view>
+</view>

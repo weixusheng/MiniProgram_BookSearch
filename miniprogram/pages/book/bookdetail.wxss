@@ -1,0 +1,17 @@
+@import '../intelligent/loading.wxss';
+
+.btn{
+width:40%
+}
+.sideview{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx
+}
+
+.text{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+

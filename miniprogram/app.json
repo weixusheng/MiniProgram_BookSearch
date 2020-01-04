@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/book/book",
+    "pages/book/bookdetail",
+    "pages/book/bookinf",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/libinfo/libinfo",
+    "pages/buildinfo/buildinfo",
+    "pages/swiper/swiper",
+    "pages/newbook/newbook",
+    "pages/hotbook/hotbook",
+    "pages/notice/notice_main",
+    "pages/notice/notice_content",
+    "pages/intelligent/intelligent_main",
+    "pages/intelligent/loading",
+    "pages/about/about",
+    "pages/intelligent/intel_content",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#CCFFFF",
+    "navigationBarTitleText": "东北电力大学",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#C4C4C4",
+    "selectedColor": "#C2C2C2",
+    "list": [
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "图书位置分布",
+        "iconPath": "pages/images/lib16.png",
+        "selectedIconPath": "pages/images/lib15.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "检索",
+        "iconPath": "pages/images/lib44.png",
+        "selectedIconPath": "pages/images/lib4.png"
+      },
+      {
+        "pagePath": "pages/notice/notice_main",
+        "text": "图书馆通知",
+        "iconPath": "pages/images/lib111.png",
+        "selectedIconPath": "pages/images/lib110.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
