@@ -14,7 +14,9 @@ page {
 }
 
 .page__bd {
-  padding-bottom: 2px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .page__bd_spacing {
@@ -51,3 +53,6 @@ page {
   color: transparent;
 }
 
+.background_color{
+  background: -webkit-linear-gradient(top,rgb(199, 254, 255),rgb(188, 255, 229));
+}

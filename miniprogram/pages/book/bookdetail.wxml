@@ -9,23 +9,24 @@
 </view>
 </view>
 
-<view class="page">
+<view class="page background_color">
     <view class="page__bd" wx:for="{{bookarr}}" wx:key="idd">
         <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.idd}}">
             <view class="weui-form-preview__hd">
                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">书名</view>
-                    <view class='text'>{{item.name}}</view>
+                    <view class="weui-form-preview__label lable1">{{item.num}}</view>
+                    <view class='weui-form-preview__label lable2'>{{item.name}}</view>
                 </view>
             </view>
+
             <view class="weui-form-preview__bd" >
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">馆藏</view>
                     <view class='text'>{{item.sum}}</view>
                 </view>
                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">可借阅</view>
-                    <view class='text'>{{item.avi}}</view>
+                    <view class="weui-form-preview__label text">可借阅</view>
+                    <view class='text imp'>{{item.avi}}</view>
                 </view>
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">出版年份</view>

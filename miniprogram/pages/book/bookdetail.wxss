@@ -1,17 +1,39 @@
 @import '../intelligent/loading.wxss';
 
-.btn{
-width:40%
+.btn {
+  width: 40%
 }
-.sideview{
+
+.sideview {
   display: flex;
   flex-direction: row;
   padding: 10rpx
 }
 
-.text{
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    white-space:nowrap; 
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+.text.imp{
+  color: rgb(255, 167, 52);
+  font-weight: bold;
+}
+
+.weui-form-preview__label.lable1{
+  background-color: rgb(255, 253, 227); 
+  color: black;
+  width: 8%;
+  border-radius: 30px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.weui-form-preview__label.lable2{
+  background-color:rgb(255, 253, 227); 
+  color: black;
+  width: 77%;
+  border-radius: 30px;
+  text-align: center;
+  text-overflow: ellipsis;
+}

@@ -4,3 +4,10 @@
      width: 100%;
      padding-bottom: 20px;
 }
+.view_block{
+     border-radius: 30px;
+     background-color: rgb(214, 250, 244);
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-bottom: 8px;
+}

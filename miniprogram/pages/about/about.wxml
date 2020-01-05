@@ -1,66 +1,88 @@
 <!--pages/about/about.wxml-->
 <view class='view'>
-<text style='font-weight:bold;color:#FF4040'>新版本展望</text>
+	<text style='font-weight:bold;color:#FF4040'>新版本展望</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#A9A9A9'>1.实现多线程检索.加快检索速度</text>
+	<text style='font-weight:bold;color:#A9A9A9'>1.实现多线程检索.加快检索速度</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#A9A9A9'>2.增加红心功能.可以收藏喜欢的图书</text>
+	<text style='font-weight:bold;color:#A9A9A9'>2.增加红心功能.可以收藏喜欢的图书</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#A9A9A9'>3.优化检索结果数据</text>
+	<text style='font-weight:bold;color:#A9A9A9'>3.优化检索结果数据</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#A9A9A9'>4.增加图书分享功能</text>
+	<text style='font-weight:bold;color:#A9A9A9'>4.增加图书分享功能</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#A9A9A9'>5.增加图书详情浏览的历史纪录</text>
+	<text style='font-weight:bold;color:#A9A9A9'>5.增加图书详情浏览的历史纪录</text>
+</view>
+
+<view class="view_block">
+	<view class='view'>
+		<text style='font-weight:bold;color:#9B30FF'>2020年1月5日更新---版本V2.21</text>
+	</view>
+	<view class='view'>
+		<text style='font-weight:bold'>1.程序页面美化,增加圆角设计</text>
+	</view>
+  <view class='view'>
+		<text style='font-weight:bold'>2.更新图书馆平面图</text>
+	</view>
+</view>
+
+<view class="view_block">
+	<view class='view'>
+		<text style='font-weight:bold;color:#9B30FF'>2020年1月1日更新---版本2.2</text>
+	</view>
+	<view class='view'>
+		<text style='font-weight:bold'>重构服务器路由逻辑,现在可以全网络访问平台</text>
+	</view>
+</view>
+
+<view class="view_block">
+	<view class='view'>
+		<text style='font-weight:bold;color:#9B30FF'>2019年3月5日更新</text>
+	</view>
+	<view class='view'>
+		<text style='font-weight:bold'>2020考研必胜!</text>
+	</view>
+</view>
+
+<view class="view_block">
+<view class='view'>
+	<text style='font-weight:bold;color:#9B30FF'>2018年12月5日更新---</text>
+	<text style='font-weight:bold;color:#4169E1'>版本号:V2.0</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#9B30FF'>2020年1月1日更新</text>
+	<text style='font-weight:bold'>1.检索界面优化,增加进度条</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold'>重构服务器路由逻辑,现在可以全网络访问平台</text>
+	<text style='font-weight:bold'>2.智能推荐算法有点小问题(哭哭)...程序员正在经历期末考试的洗礼...考完试就做出来</text>
+</view>
+</view>
+
+<view class="view_block">
+<view class='view'>
+	<text style='font-weight:bold;color:#9B30FF'>2018年10月10日更新---</text>
+	<text style='font-weight:bold;color:#4169E1'>版本号:V1.8</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold;color:#9B30FF'>2019年3月5日更新</text>
+	<text style='font-weight:bold'>1.小程序和54阳光网微信平台关联</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold'>2020考研必胜!</text>
+	<text style='font-weight:bold'>2.新增查看图书馆通知功能</text>
+</view>
+<view class='view'>
+	<text style='font-weight:bold'>3.新增查看小程序更新历史记录功能</text>
+</view>
 </view>
 
 <view class='view'>
-<text style='font-weight:bold;color:#9B30FF'>2018年12月5日更新---</text>
-<text style='font-weight:bold;color:#4169E1'>版本号:V2.2</text>
+	<text style='font-weight:bold;color:grey'>-------一个分割线-------</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold'>1.检索界面优化,增加进度条</text>
+	<text style='font-weight:bold'>亲们有什么建议可以提出来哈</text>
 </view>
 <view class='view'>
-<text style='font-weight:bold'>2.智能推荐算法有点小问题(哭哭)...程序员正在经历期末考试的洗礼...考完试就做出来</text>
-</view>
-
-<view class='view'>
-<text style='font-weight:bold;color:#9B30FF'>2018年10月10日更新---</text>
-<text style='font-weight:bold;color:#4169E1'>版本号:V1.8</text>
-</view>
-<view class='view'>
-<text style='font-weight:bold'>1.小程序和54阳光网微信平台关联</text>
-</view>
-<view class='view'>
-<text style='font-weight:bold'>2.新增查看图书馆通知功能</text>
-</view>
-<view class='view'>
-<text style='font-weight:bold'>3.新增查看小程序更新历史记录功能</text>
-</view>
-
-<view class='view'>
-<text style='font-weight:bold;color:grey'>-------又一个分割线-------</text>
-</view>
-<view class='view'>
-<text style='font-weight:bold'>亲们有什么建议可以提出来哈</text>
-</view>
-<view class='view'>
-<text style='font-weight:bold'>QQ:346339380</text>
+	<text style='font-weight:bold'>QQ:346339380</text>
 </view>

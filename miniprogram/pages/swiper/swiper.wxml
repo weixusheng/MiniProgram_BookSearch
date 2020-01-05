@@ -29,23 +29,23 @@
       <view class="page__bd">
         <view class="title">一楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/1floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/1floor.jpg"></image>
         </view>
         <view class="title">二楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/2floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/2floor.jpg"></image>
         </view>
         <view class="title">三楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/3floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/3floor.jpg"></image>
         </view>
         <view class="title">四楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/4floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/4floor.jpg"></image>
         </view>
         <view class="title">五楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 450rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/5floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/5floor.jpg"></image>
         </view>
       </view>
     </scroll-view>
