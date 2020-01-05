@@ -153,7 +153,7 @@ Page({
                for (var i in get_log) {
                     //console.log(searchLogData[i]);
                     if (get_log[i].length >= 6) {
-                         var str = get_log[i].substring(0, 6) + '...';
+                         var str = get_log[i].substring(0, 5) + '...';
                          get_log[i] = str;
                          console.log(str);
                          change_data = true;

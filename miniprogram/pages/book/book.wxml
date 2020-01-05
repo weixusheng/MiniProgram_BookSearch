@@ -5,24 +5,24 @@
 
 <view class='center'>
 <image  class='image_logo' src="../book/image/prologo.jpg" />
-<view><text style='color:#FF4040;font-weight:bold;font-size:20px'>全网络均可使用(无需校园网)</text></view>
+<view><text style='color:#FF4040;font-weight:bold;font-size:15px'>全网络均可使用(无需校园网)</text></view>
 </view>
 
 <view class="page">
 
   <view class="page__bd_book">
-    <view class="weui-search-bar">
-      <view class="weui-search-bar__form">
+    <view class="weui-search-bar radius_bar">
+      <view class="weui-search-bar__form radius_bar">
         <view class="weui-search-bar__box">
-          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-          <input type="text" class="weui-search-bar__input"  value="{{page_bookname}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <icon class="weui-icon-search_in-box radius_bar" type="search" size="17"></icon>
+          <input type="text" class="weui-search-bar__input" style="font-size:17px"  value="{{page_bookname}}" focus="{{inputShowed}}" bindinput="inputTyping" />
           <view class="weui-icon-clear" wx:if="{{page_bookname.length > 0}}" bindtap="clearInput">
-            <icon type="clear" size="14"></icon>
+            <icon type="clear" size="17"></icon>
           </view>
         </view>
-        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-          <icon class="weui-icon-search" type="search" size="14"></icon>
-          <view class="weui-search-bar__text">搜索</view>
+        <label class="weui-search-bar__label radius_bar" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="17"></icon>
+          <view class="weui-search-bar__text" style="font-size:17px">输入关键字查找</view>
         </label>
       </view>
       <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
@@ -31,23 +31,20 @@
 </view>
 
 <view class='.btnview'>
-  <view class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
+  <button class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
     {{searchLog}}
-  </view>
+  </button> 
 </view>
 
 
 <view class='book_button'>
-  <view class='btnview'>
-    <button class='btn' bindtap='buttonreq'><text style='font-weight:bold;font-size:18px'>查询</text></button>
+  <view class='btnview_search'>
+    <button class='btn' bindtap='buttonreq'><text style='font-weight:bold'>查询</text></button>
   </view>
 </view>
 
 
 <view class="weui-footer weui-footer_fixed-bottom">
-  <view class="weui-footer__links">
-    <navigator class="weui-footer__link">NEEPU因特雷工作室 · 54阳光网</navigator>
-  </view>
   <view class="weui-footer__text">开发版本V2.1</view>
   <view class="weui-footer__text">Copyright© 1995-2020 ITL_Studio</view>
 </view>
