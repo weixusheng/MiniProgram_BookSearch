@@ -50,6 +50,7 @@ Page({
         })
       }
     })
+    /*
     wx.request({
       url: 'https://neepupro.mynatapp.cc/tap_intel',
       data: {
@@ -66,6 +67,7 @@ Page({
         console.log(res);
       }
     })
+    */
   },
   onReady: function() {
     // Do something when page ready. 
@@ -83,5 +85,4 @@ Page({
     // Do something when pull down 
   },
   // Event handler. 
-
 })

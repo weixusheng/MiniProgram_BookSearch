@@ -1,10 +1,15 @@
+page{
+  background-color:#f4f4f4;
+}
+
 .btn{
 width:40%
 }
 .sideview{
   display: flex;
   flex-direction: row;
-  padding: 10rpx
+  padding: 10rpx;
+  padding-bottom: 10rpx;
 }
 
 .text{

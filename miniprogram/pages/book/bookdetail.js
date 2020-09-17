@@ -62,7 +62,7 @@ Page({
         //console.log(res['data'][1])
         //console.log(res['data'][2])
         //getDataArr(res)
-        console.log(res['data'])
+        //console.log(res['data'])
 
         if (res['data'].length < 20) {
           console.log('visible')
@@ -143,5 +143,4 @@ Page({
     console.log(e.currentTarget.dataset.id)
     getApp().globalData.bookid = e.currentTarget.dataset.id.substring(17)
   },
-
 }) 

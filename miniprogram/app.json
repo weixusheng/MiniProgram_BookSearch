@@ -20,13 +20,13 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#CCFFFF",
+    "navigationBarBackgroundColor": "#e1ffe1",
     "navigationBarTitleText": "东北电力大学",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#C4C4C4",
-    "selectedColor": "#C2C2C2",
+    "selectedColor": "#2990dc",
     "list": [
       {
         "pagePath": "pages/swiper/swiper",

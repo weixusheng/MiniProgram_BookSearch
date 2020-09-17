@@ -1,38 +1,45 @@
 @import '../intelligent/loading.wxss';
 
+page{
+  background-color:#f4f4f4;
+}
+
 .btn {
-  width: 40%
+  width: 40%;
+  background-color: white;
 }
 
 .sideview {
   display: flex;
   flex-direction: row;
-  padding: 10rpx
+  padding: 10rpx;
+  padding-bottom: 30rpx;
 }
 
 .text {
+  color: black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .text.imp{
-  color: rgb(255, 167, 52);
+  color: #f15a4a;
   font-weight: bold;
 }
 
 .weui-form-preview__label.lable1{
-  background-color: rgb(255, 253, 227); 
-  color: black;
+  background-color: #d1c6ff; 
+  color: white;
   width: 8%;
   border-radius: 30px;
   text-align: center;
   text-overflow: ellipsis;
 }
 .weui-form-preview__label.lable2{
-  background-color:rgb(255, 253, 227); 
-  color: black;
-  width: 77%;
+  color: #9988b3;
+  background-color: #f5f6ff; 
+  width: 85%;
   border-radius: 30px;
   text-align: center;
   text-overflow: ellipsis;

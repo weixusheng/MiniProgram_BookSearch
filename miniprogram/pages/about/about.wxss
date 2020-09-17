@@ -5,8 +5,8 @@
      padding-bottom: 20px;
 }
 .view_block{
-     border-radius: 30px;
-     background-color: rgb(214, 250, 244);
+     border-radius: 10px;
+     background-color: #f5f6ff;
      margin-left: 10px;
      margin-right: 10px;
      margin-bottom: 8px;

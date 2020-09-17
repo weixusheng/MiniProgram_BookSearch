@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarBackgroundColor": "#cccfff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "热门图书",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

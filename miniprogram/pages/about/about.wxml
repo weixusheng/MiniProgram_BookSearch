@@ -1,6 +1,6 @@
 <!--pages/about/about.wxml-->
 <view class='view'>
-	<text style='font-weight:bold;color:#FF4040'>新版本展望</text>
+	<text style='font-weight:bold;color:#FF4040'>未来会加入的功能</text>
 </view>
 <view class='view'>
 	<text style='font-weight:bold;color:#A9A9A9'>1.实现多线程检索.加快检索速度</text>
@@ -16,6 +16,15 @@
 </view>
 <view class='view'>
 	<text style='font-weight:bold;color:#A9A9A9'>5.增加图书详情浏览的历史纪录</text>
+</view>
+
+<view class="view_block">
+	<view class='view'>
+		<text style='font-weight:bold;color:#9B30FF'>2020年9月18日更新---版本V2.22</text>
+	</view>
+	<view class='view'>
+		<text style='font-weight:bold'>优化页面配色</text>
+	</view>
 </view>
 
 <view class="view_block">
@@ -40,24 +49,12 @@
 </view>
 
 <view class="view_block">
-	<view class='view'>
-		<text style='font-weight:bold;color:#9B30FF'>2019年3月5日更新</text>
-	</view>
-	<view class='view'>
-		<text style='font-weight:bold'>2020考研必胜!</text>
-	</view>
-</view>
-
-<view class="view_block">
 <view class='view'>
 	<text style='font-weight:bold;color:#9B30FF'>2018年12月5日更新---</text>
 	<text style='font-weight:bold;color:#4169E1'>版本号:V2.0</text>
 </view>
 <view class='view'>
 	<text style='font-weight:bold'>1.检索界面优化,增加进度条</text>
-</view>
-<view class='view'>
-	<text style='font-weight:bold'>2.智能推荐算法有点小问题(哭哭)...程序员正在经历期末考试的洗礼...考完试就做出来</text>
 </view>
 </view>
 
@@ -80,9 +77,10 @@
 <view class='view'>
 	<text style='font-weight:bold;color:grey'>-------一个分割线-------</text>
 </view>
+
 <view class='view'>
-	<text style='font-weight:bold'>亲们有什么建议可以提出来哈</text>
+	<text style='font-weight:bold'>copyright© 魏绪升-核电161</text>
 </view>
 <view class='view'>
-	<text style='font-weight:bold'>QQ:346339380</text>
+<text style='font-weight:bold'>QQ:346339380</text>
 </view>

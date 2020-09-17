@@ -195,7 +195,7 @@ icon {
 }
 .weui-form-preview {
   position: relative;
-  background-color: rgb(252, 252, 252); 
+  background-color: white; 
   border-radius: 20px;
   width: 100%;
 }
@@ -223,6 +223,7 @@ icon {
   text-align: right;
   line-height: 2.5em;
 }
+/*
 .weui-form-preview__hd:after {
   content: " ";
   position: absolute;
@@ -234,6 +235,7 @@ icon {
   color: #D9D9D9;
   left: 15px;
 }
+*/
 .weui-form-preview__bd {
   padding: 10px 15px;
   font-size: .9em;
@@ -264,9 +266,7 @@ icon {
 .weui-form-preview__label {
   float: left;
   margin-right: 0.5em;
-  min-width: 4em;
-  color: #999999;
-  text-align: justify;
+  min-width: 2.5em;
 }
 .weui-form-preview__value {
   display: block;

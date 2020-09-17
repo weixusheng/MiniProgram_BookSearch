@@ -18,10 +18,10 @@
 .btn{
 width:400rpx;
 border-radius: 100rpx;
-color: #4f6b72;
 font-size: 25px;
 padding: 0rpx;
-background-color: #adf7b3;
+color: white;
+background-color: #c2d1ff;
 }
 
 .book_button
@@ -43,22 +43,26 @@ text_color{
   
 }
 .center{
+  padding-top: 7px;
   justify-content: center;
   text-align: center;
 }
-.search-log{  
+
+.search-log{ 
+    color: #97b389;
+    background-color: #e5ffe5; 
     font-size: 16px;
+    font-weight: bold;
     height: 45px;
     display:inline-block !important;  
     margin-left:8rpx !important;  
     margin-top:5px !important;
     width: 32%; 
-    border-radius:50px;  
+    border-radius:20px;
     box-sizing:border-box;  
     text-align:center; 
-    background-color: rgb(223, 249, 242); 
     text-decoration:none;  
-    line-height:2.5;
+    line-height:2.7;
     justify-content: center;
 }  
 

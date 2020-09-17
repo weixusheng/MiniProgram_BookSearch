@@ -9,6 +9,10 @@ page {
   font-family: '微软雅黑', Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 
+button::after {
+  border: none
+}
+
 .page__hd {
   padding: 20px;
 }
@@ -53,6 +57,4 @@ page {
   color: transparent;
 }
 
-.background_color{
-  background: -webkit-linear-gradient(top,rgb(199, 254, 255),rgb(188, 255, 229));
-}
+

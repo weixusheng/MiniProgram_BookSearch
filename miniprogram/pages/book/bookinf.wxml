@@ -1,6 +1,6 @@
 <view class="page background_color">
   <view class="page__bd">
-    <view class="weui-form-preview">
+    <view class="weui-form-preview color_panel_t">
       <view class="weui-form-preview__hd">
         <view class="weui-form-preview__item">
           <view class="weui-form-preview__value_in-hd">{{info_data["题名/责任者:"]}}</view>
@@ -28,45 +28,45 @@
           <view class="weui-form-preview__value">{{info_data["学科主题:"]}}</view>
         </view>
       </view>
-<view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title_book weui-media-box__title_in-text">提要文摘附注:</view>
-                    <view class="weui-media-box__desc_book">{{info_data["提要文摘附注:"]}}</view>
-                    <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta text_color3">中图法分类号:</view>
-                        <view class="weui-media-box__info__meta text_color3">{{info_data["中图法分类号:"]}}</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{info_data["载体形态项:"]}}</view>
-                    </view>
-                </view>
-            </view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title_book weui-media-box__title_in-text">提要文摘附注:</view>
+          <view class="weui-media-box__desc_book">{{info_data["提要文摘附注:"]}}</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta text_color3">中图法分类号:</view>
+            <view class="weui-media-box__info__meta text_color3">{{info_data["中图法分类号:"]}}</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{info_data["载体形态项:"]}}</view>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
-    <view class="page__bd" wx:for="{{info_location}}" wx:key="*this">
-      <view class="weui-form-preview" >
-            <view class="weui-form-preview__hd ">
-                <view class="weui-form-preview__item ">
-                    <view class="weui-form-preview__label ">条码号</view>
-                    <view >{{item.tm_mun}}</view>
-                </view>
-            </view>
-            <view class="weui-form-preview__bd " >
-                <view class="weui-form-preview__item ">
-                    <view class="weui-form-preview__label ">书刊状态</view>
-                    <view class="{{item.state == '可借' ? 'text_color':'text_default'}}">{{item.state}}</view>
-                </view>
-                <view class="weui-form-preview__item ">
-                    <view class="weui-form-preview__label ">校区—馆藏地</view>
-                    <view class='text_color2' >{{item.location}}</view>
-                </view>
-                <view class="weui-form-preview__item ">
-                    <view class="weui-form-preview__label ">索书号</view>
-                    <view >{{item.ss_num}}</view>
-                </view>
-                <view class="weui-form-preview__item ">
-                    <view class="weui-form-preview__label ">年卷期</view>
-                    <view >{{item.date}}</view>
-                </view>
-            </view>
-       </view>  
-     </view>
+  <view class="page__bd" wx:for="{{info_location}}" wx:key="*this">
+    <view class="weui-form-preview color_panel">
+      <view class="weui-form-preview__hd ">
+        <view class="weui-form-preview__item ">
+          <view class="weui-form-preview__label ">条码号</view>
+          <view>{{item.tm_mun}}</view>
+        </view>
+      </view>
+      <view class="weui-form-preview__bd ">
+        <view class="weui-form-preview__item ">
+          <view class="weui-form-preview__label ">书刊状态</view>
+          <view class="{{item.state == '可借' ? 'text_color':'text_default'}}">{{item.state}}</view>
+        </view>
+        <view class="weui-form-preview__item ">
+          <view class="weui-form-preview__label ">校区—馆藏地</view>
+          <view class='text_color2'>{{item.location}}</view>
+        </view>
+        <view class="weui-form-preview__item ">
+          <view class="weui-form-preview__label ">索书号</view>
+          <view>{{item.ss_num}}</view>
+        </view>
+        <view class="weui-form-preview__item ">
+          <view class="weui-form-preview__label ">年卷期</view>
+          <view>{{item.date}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
