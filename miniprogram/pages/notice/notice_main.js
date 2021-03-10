@@ -17,8 +17,7 @@ Page({
                     "Content-Type": "application/x-www-form-urlencoded"
                },
                success: function (res) {
-                    console.log(res['data'])
-
+                    //console.log(res['data'])
                     if (res['data'].length == 20) {
                          that.setData({
                               nextshow: false
@@ -30,7 +29,7 @@ Page({
                     })
                },
                fail: function (res) {
-                    console.log("failed")
+                    //console.log("failed")
                }
           })
      },
@@ -38,7 +37,7 @@ Page({
      pagerequest: function (pagenum) {
           var that = this
           wx.request({
-               url: 'https://itl.neepu.edu.cn/notice_list',
+               url: 'https://neepupro.mynatapp.cc/notice_list',
                data: {
                     page: pagenum
                },
@@ -47,10 +46,9 @@ Page({
                     "Content-Type": "application/x-www-form-urlencoded"
                },
                success: function (res) {
-                    console.log(res['data'])
-
+                    //console.log(res['data'])
                     if (res['data'].length < 20) {
-                         console.log('visible')
+                         //console.log('visible')
                          that.setData({
                               nextshow: true
                          })
@@ -67,7 +65,7 @@ Page({
                     })
                },
                fail: function (res) {
-                    console.log("failed")
+                    //console.log("failed")
                }
           })
      },
@@ -88,12 +86,26 @@ Page({
           // Do something when pull down 
      },
      // Event handler. 
+     goTop: function (e) { // 一键回到顶部
+          if (wx.pageScrollTo) {
+               wx.pageScrollTo({
+                    scrollTop: 0
+               })
+          } else {
+               wx.showModal({
+                    title: '提示',
+                    content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+               })
+          }
+     },
+
      nextpage: function () {
           pagenum += 1;
           this.pagerequest(pagenum)
           this.setData({
                headshow: false
           })
+          this.goTop();
      },
 
      headpage: function () {
@@ -104,6 +116,7 @@ Page({
                     headshow: true
                })
           }
+          this.goTop();
      },
 
      viewtap: function (e) {
@@ -112,6 +125,5 @@ Page({
           })
           console.log(e.currentTarget.dataset.id)
           getApp().globalData.href = e.currentTarget.dataset.id
-
      }
-}) 
+})

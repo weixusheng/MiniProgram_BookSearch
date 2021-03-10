@@ -3,8 +3,6 @@
     "pages/book/book",
     "pages/book/bookdetail",
     "pages/book/bookinf",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/libinfo/libinfo",
     "pages/buildinfo/buildinfo",
     "pages/swiper/swiper",
@@ -12,11 +10,8 @@
     "pages/hotbook/hotbook",
     "pages/notice/notice_main",
     "pages/notice/notice_content",
-    "pages/intelligent/intelligent_main",
-    "pages/intelligent/loading",
     "pages/about/about",
-    "pages/intelligent/intel_content",
-    "pages/personal/personal"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -17,6 +17,7 @@
 .on {
      color: #436269;
      border-bottom: 3.5rpx solid #436269;
+     background-color: #cccfff;
 }
 
 .off {
@@ -61,10 +62,6 @@
      text-align: center;
 }
 
-.bg-w {
-     /* background: snow; */
-}
-
 .bg-g {
      background: #e6f3f9;
 }
@@ -104,6 +101,8 @@
 }
 
 .title {
+     font-weight: bold;
+     color: red;
      font-size: 13px;
      padding-bottom: 6px;
      padding-top: 6px;

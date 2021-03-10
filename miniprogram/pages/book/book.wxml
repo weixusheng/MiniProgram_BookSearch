@@ -1,11 +1,10 @@
-<import src="../../components/button/button.wxml"/>
-<template is="button" data="{{ ...$wux.button.br }}"/>
-<import src="../../components/backdrop/backdrop.wxml"/>
-<template is="backdrop" data="{{ ...$wux.backdrop }}"/>
+<import src="../../components/button/button.wxml" />
+<template is="button" data="{{ ...$wux.button.br }}" />
+<import src="../../components/backdrop/backdrop.wxml" />
+<template is="backdrop" data="{{ ...$wux.backdrop }}" />
 
 <view class='center'>
-<image  class='image_logo' src="../book/image/prologo.jpg" />
-<view><text style='color:#FF4040;font-weight:bold;font-size:15px'>全网络均可使用(无需校园网)</text></view>
+  <image class='image_logo' src="../book/image/prologo.jpg" />
 </view>
 
 <view class="page">
@@ -15,14 +14,15 @@
       <view class="weui-search-bar__form radius_bar">
         <view class="weui-search-bar__box">
           <icon class="weui-icon-search_in-box radius_bar" type="search" size="17"></icon>
-          <input type="text" class="weui-search-bar__input" style="font-size:17px"  value="{{page_bookname}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <input type="text" class="weui-search-bar__input" style="font-size:19px" value="{{page_bookname}}"
+            focus="{{inputShowed}}" bindinput="inputTyping" />
           <view class="weui-icon-clear" wx:if="{{page_bookname.length > 0}}" bindtap="clearInput">
             <icon type="clear" size="17"></icon>
           </view>
         </view>
         <label class="weui-search-bar__label radius_bar" hidden="{{inputShowed}}" bindtap="showInput">
           <icon class="weui-icon-search" type="search" size="17"></icon>
-          <view class="weui-search-bar__text" style="font-size:17px">输入关键字查找</view>
+          <view class="weui-search-bar__text" style="font-size:16px">输入关键字查询</view>
         </label>
       </view>
       <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
@@ -31,9 +31,10 @@
 </view>
 
 <view class='.btnview'>
-  <button class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId" bindtap="searchDataByLog" data-log="{{searchLog}}">
+  <button class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId"
+    bindtap="searchDataByLog" data-log="{{searchLog}}">
     {{searchLog}}
-  </button> 
+  </button>
 </view>
 
 
@@ -45,7 +46,5 @@
 
 
 <view class="weui-footer weui-footer_fixed-bottom">
-  <view class="weui-footer__text">开发版本V2.2</view>
-  <view class="weui-footer__text">Copyright© 1995-2020 ITL_Studio</view>
+  <view class="weui-footer__text">技术支持: 东北电力大学因特雷工作室</view>
 </view>
-

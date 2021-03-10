@@ -1,4 +1,4 @@
-@import '../intelligent/loading.wxss';
+@import '../../components/loading.wxss';
 
 page{
   background-color:#f4f4f4;
@@ -39,7 +39,7 @@ page{
 .weui-form-preview__label.lable2{
   color: #9988b3;
   background-color: #f5f6ff; 
-  width: 85%;
+  width: 80%;
   border-radius: 30px;
   text-align: center;
   text-overflow: ellipsis;

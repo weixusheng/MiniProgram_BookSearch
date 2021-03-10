@@ -2,6 +2,7 @@
   width: 100%;
   justify-content: center;
   padding-top: 10rpx;
+  height: 105px;
 }
 
 .btnview_search{
@@ -9,14 +10,8 @@
   justify-content: center;
 }
 
-/* .btnview button {
-	flex: 1;
-	margin: 0 22rpx;
-	max-width: 50%;
-} */
-
 .btn{
-width:400rpx;
+width: 45%;
 border-radius: 100rpx;
 font-size: 25px;
 padding: 0rpx;
@@ -26,13 +21,13 @@ background-color: #c2d1ff;
 
 .book_button
 {
-  padding-top: 30rpx
+  padding-top: 20px
 }
 
 .page__bd_book
 {
-  padding-top: 20rpx;
-  padding-bottom: 10rpx
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 .title_font{
   font-weight: bold;
@@ -40,7 +35,6 @@ background-color: #c2d1ff;
 }
 text_color{
   color: red;
-  
 }
 .center{
   padding-top: 7px;

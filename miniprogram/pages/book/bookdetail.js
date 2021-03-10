@@ -5,7 +5,7 @@ Page({
     nextshow: true,
     headshow: true,
     loading: false,
-    text: "数据正在加载.."
+    text: "数据正在加载中..."
   },
   onLoad: function (options) {
     var that = this
@@ -39,7 +39,7 @@ Page({
       fail: function (res) {
         console.log("failed")
         that.setData({
-          text : "数据加载超时...请重新检索"
+          text : "数据加载超时啦,试试重新检索吧"
         })
       }
     })

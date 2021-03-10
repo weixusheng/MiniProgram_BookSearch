@@ -13,7 +13,7 @@
           <view class="th_w">地点</view>
           <view class="th_w">书目</view>
         </view>
-        <block wx:for="{{listData}}" wx:key="{{code}}">
+        <block wx:for="{{listData}}" wx:key="*this">
           <view class="tr bg-g">
             <view class="td">{{item.code}}</view>
             <view class="td">{{item.text}}</view>
@@ -27,25 +27,25 @@
   <swiper-item>
     <scroll-view scroll-y="true" style="height: 100%">
       <view class="page__bd">
-        <view class="title">一楼</view>
+        <view class="title">一 楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/1floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="cloud://neepu-pro.6e65-neepu-pro-1254020584/image/floor/1floor.jpg"></image>
         </view>
-        <view class="title">二楼</view>
+        <view class="title">二 楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/2floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="cloud://neepu-pro.6e65-neepu-pro-1254020584/image/floor/2floor.jpg"></image>
         </view>
-        <view class="title">三楼</view>
+        <view class="title">三 楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/3floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="cloud://neepu-pro.6e65-neepu-pro-1254020584/image/floor/3floor.jpg"></image>
         </view>
-        <view class="title">四楼</view>
+        <view class="title">四 楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/4floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="cloud://neepu-pro.6e65-neepu-pro-1254020584/image/floor/4floor.jpg"></image>
         </view>
-        <view class="title">五楼</view>
+        <view class="title">五 楼</view>
         <view class="section__ctn">
-          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="/pages/images/5floor.jpg"></image>
+          <image style="width:700rpx; height: 330rpx; background-color: #eeeeee;" mode="aspectFit" src="cloud://neepu-pro.6e65-neepu-pro-1254020584/image/floor/5floor.jpg"></image>
         </view>
       </view>
     </scroll-view>
