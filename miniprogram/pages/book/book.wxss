@@ -24,6 +24,10 @@ background-color: #c2d1ff;
   padding-top: 20px
 }
 
+.red-text {
+  color: red;
+}
+
 .page__bd_book
 {
   padding-bottom: 5px;
@@ -33,9 +37,7 @@ background-color: #c2d1ff;
   font-weight: bold;
   font-size: 23px
 }
-text_color{
-  color: red;
-}
+
 .center{
   padding-top: 7px;
   justify-content: center;

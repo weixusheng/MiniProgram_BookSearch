@@ -4,7 +4,7 @@
 <template is="backdrop" data="{{ ...$wux.backdrop }}" />
 
 <view class='center'>
-  <image class='image_logo' src="../book/image/prologo.jpg" />
+  <image class='image_logo' src="../../images/prologo.jpg" />
 </view>
 
 <view class="page">

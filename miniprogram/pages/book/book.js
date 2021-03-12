@@ -17,42 +17,15 @@ Page({
           opened: !1,
      },
      onLoad: function (options) {
+          this.setData({
+               page_bookname: this.search.bind(this)
+           })
           this.searchLogShowed();
           //
           this.initButton();
           //
           this.$wuxBackdrop = $wuxBackdrop.init(); //屏幕变暗
           getApp().globalData.lock = 1;
-          /*wx.login({
-               success: function (res) {
-                    console.log(res.code);
-                    var code = res.code;
-                    //发送请求
-                    if (code) {
-                         wx.request({
-                              url: 'https://itl.neepu.edu.cn/login', //接口地址
-                              data: {
-                                   code: code
-                              },
-                              method: 'POST',
-                              header: {
-                                   'content-type': 'application/x-www-form-urlencoded' 
-                              },
-                              success: function (res) {
-                                   console.log(res.data);
-                                   if (res.statusCode == 200) {
-                                        getApp().globalData.openid = res.data['openid'];
-                                   } else {
-                                        console.log("erro_login")
-                                   }
-
-                              }
-                         })
-                    } else {
-                         console.log('获取用户登录失败');
-                    }
-               }
-          })*/
      },
 
      onReady: function () {
@@ -125,6 +98,7 @@ Page({
           });
      },
      inputTyping: function (e) {
+          console.log("正在输入...")
           book_name_quanju = e.detail.value
           this.setData({
                page_bookname: e.detail.value
@@ -232,15 +206,15 @@ Page({
                position: position,
                buttons: [{
                          label: '新书速递',
-                         icon: "../book/image/book.png",
+                         icon: "../../images/index_btn/book.png",
                     },
                     {
                          label: '热门图书',
-                         icon: "../book/image/hot_book.png",
+                         icon: "../../images/index_btn/hot_book.png",
                     },
                     {
                          label: '更新日志',
-                         icon: "../book/image/about.png",
+                         icon: "../../images/index_btn/about.png",
                     },
                ],
                buttonClicked(index, item) {

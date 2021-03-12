@@ -37,7 +37,6 @@ App({
           userInfo: null,
           main_data: '',
           lock: 1,
-
           test: '',
           bookid: '',
           href: '',

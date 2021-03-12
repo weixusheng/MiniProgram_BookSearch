@@ -26,20 +26,26 @@
       {
         "pagePath": "pages/swiper/swiper",
         "text": "图书位置分布",
-        "iconPath": "pages/images/lib16.png",
-        "selectedIconPath": "pages/images/lib15.png"
+        "iconPath": "images/tabbar/loc.png",
+        "selectedIconPath": "images/tabbar/loc_s.png"
       },
       {
         "pagePath": "pages/book/book",
         "text": "检索",
-        "iconPath": "pages/images/lib44.png",
-        "selectedIconPath": "pages/images/lib4.png"
+        "iconPath": "images/tabbar/search.png",
+        "selectedIconPath": "images/tabbar/search_s.png"
       },
       {
         "pagePath": "pages/notice/notice_main",
         "text": "图书馆通知",
-        "iconPath": "pages/images/lib111.png",
-        "selectedIconPath": "pages/images/lib110.png"
+        "iconPath": "images/tabbar/notice.png",
+        "selectedIconPath": "images/tabbar/notice_s.png"
+      },
+      {
+        "pagePath": "pages/notice/notice_main",
+        "text": "收藏列表",
+        "iconPath": "images/tabbar/heart.png",
+        "selectedIconPath": "images/tabbar/heart_s.png"
       }
     ]
   },
