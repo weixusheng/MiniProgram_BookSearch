@@ -21,7 +21,7 @@ Page({
      onLoad: function (options) {
           this.setData({
                page_bookname: this.search.bind(this)
-           })
+          })
           this.searchLogShowed();
           //
           this.initButton();
@@ -30,8 +30,7 @@ Page({
           getApp().globalData.lock = 1;
      },
 
-     onReady: function () {
-     },
+     onReady: function () {},
 
      /**
       * 生命周期函数--监听页面显示
@@ -44,8 +43,7 @@ Page({
      /**
       * 生命周期函数--监听页面隐藏
       */
-     onHide: function () {
-     },
+     onHide: function () {},
 
      /**
       * 生命周期函数--监听页面卸载
@@ -57,22 +55,18 @@ Page({
      /**
       * 页面相关事件处理函数--监听用户下拉动作
       */
-     onPullDownRefresh: function () {
-     },
+     onPullDownRefresh: function () {},
 
      /**
       * 页面上拉触底事件的处理函数
       */
-     onReachBottom: function () {
-     },
+     onReachBottom: function () {},
 
      /**
       * 用户点击右上角分享
       */
-     onShareAppMessage: function () {
-     },
+     onShareAppMessage: function () {},
      event: function () {
-          console.log('事件1')
           if (getApp().globalData.lock == 0) {
                this.$wuxBackdrop.release()
                //console.log('变亮')
@@ -118,11 +112,8 @@ Page({
           var that = this;
           var change_data = false;
           var get_log = wx.getStorageSync('searchLog');
-          //console.log("调取历史记录")
           if ("" != get_log) {
-
                for (var i in get_log) {
-                    //console.log(searchLogData[i]);
                     if (get_log[i].length >= 6) {
                          var str = get_log[i].substring(0, 5) + '...';
                          get_log[i] = str;
@@ -188,14 +179,9 @@ Page({
           //console.log("成功调用函数")
           var that = this;
           if (book_name_quanju == "" || book_name_quanju == null) {
-               wx.showToast({
-                    title: '请输入书名',
-                    icon: 'loading',
-                    duration: 1000
-               })
                this.setData({
-                    error: '这是一个错误提示'
-                })
+                    error: '请输入书名'
+               })
           } else {
                that.search(book_name_quanju);
                that.searchData(book_name_quanju);

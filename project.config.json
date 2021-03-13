@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
+  "cloudfunctionRoot": "./miniprogram/functions/",
   "description": "项目配置文件。",
   "setting": {
     "urlCheck": true,
