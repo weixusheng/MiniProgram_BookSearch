@@ -15,6 +15,8 @@ Page({
           types: ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'],
           index: 3,
           opened: !1,
+          //错误提示
+          error: ''
      },
      onLoad: function (options) {
           this.setData({
@@ -96,6 +98,7 @@ Page({
           this.setData({
                page_bookname: ""
           });
+          book_name_quanju = ""
      },
      inputTyping: function (e) {
           console.log("正在输入...")
@@ -128,7 +131,6 @@ Page({
                     }
                }
                that.setData({
-                    //searchLogShowed: true,
                     searchLogList: get_log
                });
 
@@ -191,6 +193,9 @@ Page({
                     icon: 'loading',
                     duration: 1000
                })
+               this.setData({
+                    error: '这是一个错误提示'
+                })
           } else {
                that.search(book_name_quanju);
                that.searchData(book_name_quanju);

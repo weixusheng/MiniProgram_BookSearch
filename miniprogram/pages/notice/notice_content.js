@@ -1,7 +1,8 @@
-var WxParse = require('../wxParse/wxParse.js');
+//var WxParse = require('../wxParse/wxParse.js');
 Page({
      data: {
           main_data: [],
+          htmlSnip: ''
      },
      onLoad: function (options) {
           var that = this
@@ -17,10 +18,12 @@ Page({
                     "Content-Type": "application/x-www-form-urlencoded"
                },
                success: function (res) {
-                    console.log(res['data'])
                     article = res['data']['content']
-                    console.log(article)
-                    WxParse.wxParse('article', 'html', article,that, 5);
+                    //正则替换图片
+                    var txt = article.replace(/<img.*/g,"");
+                    that.setData({
+                         htmlSnip: txt
+                    })
                },
                fail: function (res) {
                     console.log("failed")

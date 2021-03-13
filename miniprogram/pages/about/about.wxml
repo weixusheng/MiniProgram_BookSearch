@@ -20,6 +20,15 @@
 
 <view class="view_block">
 	<view class='view'>
+		<text style='font-weight:bold;color:#9B30FF'>2021年3月13日更新---版本V2.23</text>
+	</view>
+	<view class='view'>
+		<text style='font-weight:bold'>优化界面显示</text>
+	</view>
+</view>
+
+<view class="view_block">
+	<view class='view'>
 		<text style='font-weight:bold;color:#9B30FF'>2020年9月18日更新---版本V2.22</text>
 	</view>
 	<view class='view'>
@@ -54,7 +63,7 @@
 	<text style='font-weight:bold;color:#4169E1'>版本号:V2.0</text>
 </view>
 <view class='view'>
-	<text style='font-weight:bold'>1.检索界面优化,增加进度条</text>
+	<text style='font-weight:bold'>检索界面优化,增加进度条</text>
 </view>
 </view>
 

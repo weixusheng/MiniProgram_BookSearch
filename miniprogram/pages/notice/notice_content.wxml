@@ -1,5 +1,6 @@
-<import src="../wxParse/wxParse.wxml"/>
-   
 <!--这里data中article为bindName-->
-
+<!--
+<import src="../wxParse/wxParse.wxml"/>
 <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+-->
+<rich-text nodes="{{htmlSnip}}"></rich-text>

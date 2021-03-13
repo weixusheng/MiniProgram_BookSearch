@@ -33,10 +33,6 @@ background-color: #c2d1ff;
   padding-bottom: 5px;
   padding-top: 10px;
 }
-.title_font{
-  font-weight: bold;
-  font-size: 23px
-}
 
 .center{
   padding-top: 7px;
@@ -79,6 +75,7 @@ background-color: #c2d1ff;
 }
 
 .image_logo{
+  padding-top: 20rpx;
   width: 650rpx;
   height: 325rpx;
 }

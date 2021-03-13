@@ -3,8 +3,6 @@
     "pages/book/book",
     "pages/book/bookdetail",
     "pages/book/bookinf",
-    "pages/libinfo/libinfo",
-    "pages/buildinfo/buildinfo",
     "pages/swiper/swiper",
     "pages/newbook/newbook",
     "pages/hotbook/hotbook",

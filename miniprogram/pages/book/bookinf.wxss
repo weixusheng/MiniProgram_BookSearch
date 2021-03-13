@@ -1,19 +1,53 @@
-.text_color{
+.text_color {
   font-weight: bold;
   color: #ff4dac
 }
-.text_color2{
+
+.text_color2 {
   font-weight: bold;
   color: #00ccbf
 }
-.text_color3{
+
+.text_color3 {
   font-weight: bold;
   color: #FF3030
 }
 
-.color_panel{
-  background-color:#fffee5;
+.color_panel {
+  background-color: #FFFFF0;
+  padding: 10px;
 }
-.color_panel_t{
-  background-color:white;
+
+.color_panel_t {
+  background-color: white;
+}
+
+.theme_log {
+  color: #3CB371;
+  background-color: #F0FFFF;
+  font-size: 13px;
+  height: 30px;
+  display: inline-block !important;
+  margin-left: 8rpx !important;
+  margin-top: 5px !important;
+  width: 30%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+}
+
+.info_title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.title_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.small_text {
+  font-size: 14px;
 }

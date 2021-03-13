@@ -3,7 +3,7 @@
     <view class="weui-form-preview color_panel_t">
       <view class="weui-form-preview__hd">
         <view class="weui-form-preview__item">
-          <view class="weui-form-preview__value_in-hd">{{info_data["题名/责任者:"]}}</view>
+          <view class="weui-form-preview__value_in-hd title_name">{{info_data["name"]}}</view>
         </view>
       </view>
       <view class="weui-form-preview__bd">
@@ -12,8 +12,12 @@
           <view class="weui-form-preview__value">{{info_data["出版发行项:"]}}</view>
         </view>
         <view class="weui-form-preview__item">
-          <view class="weui-form-preview__label">ISBN及定价:</view>
-          <view class="weui-form-preview__value">{{info_data["ISBN及定价:"]}}</view>
+          <view class="weui-form-preview__label">ISBN:</view>
+          <view class="weui-form-preview__value">{{info_data["isbn"]}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">定价:</view>
+          <view class="weui-form-preview__value">{{info_data["price"]}}</view>
         </view>
         <view class="weui-form-preview__item">
           <view class="weui-form-preview__label">丛编项:</view>
@@ -25,14 +29,18 @@
         </view>
         <view class="weui-form-preview__item">
           <view class="weui-form-preview__label">学科主题:</view>
-          <view class="weui-form-preview__value">{{info_data["学科主题:"]}}</view>
+          <view class="theme_log" wx:for="{{info_list}}">
+            {{item}}
+          </view>
         </view>
       </view>
       <view class="weui-panel__bd">
         <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title_book weui-media-box__title_in-text">提要文摘附注:</view>
-          <view class="weui-media-box__desc_book">{{info_data["提要文摘附注:"]}}</view>
-          <view class="weui-media-box__info">
+          <view class="weui-media-box__title_book weui-media-box__title_in-text info_title" >
+            <text>提要文摘附注:</text>
+          </view>
+          <view class="weui-media-box__desc_book" style="text-indent:2em">{{info_data["提要文摘附注:"]}}</view>
+          <view class="weui-media-box__info small_text">
             <view class="weui-media-box__info__meta text_color3">中图法分类号:</view>
             <view class="weui-media-box__info__meta text_color3">{{info_data["中图法分类号:"]}}</view>
             <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{info_data["载体形态项:"]}}</view>
@@ -42,8 +50,8 @@
     </view>
   </view>
   <view class="page__bd" wx:for="{{info_location}}" wx:key="*this">
-    <view class="weui-form-preview color_panel">
-      <view class="weui-form-preview__hd ">
+    <view class="weui-form-preview ">
+      <view class="weui-form-preview__hd color_panel">
         <view class="weui-form-preview__item ">
           <view class="weui-form-preview__label ">条码号</view>
           <view>{{item.tm_mun}}</view>
@@ -58,7 +66,7 @@
           <view class="weui-form-preview__label ">校区—馆藏地</view>
           <view class='text_color2'>{{item.location}}</view>
         </view>
-        <view class="weui-form-preview__item ">
+        <view class="weui-form-preview__item text_color3">
           <view class="weui-form-preview__label ">索书号</view>
           <view>{{item.ss_num}}</view>
         </view>

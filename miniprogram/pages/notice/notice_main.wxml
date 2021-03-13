@@ -2,8 +2,8 @@
     <view class='tlt'>东北电力大学图书馆通知</view>
     <view class='lin'></view>
     <view class="page__bd view" wx:for="{{bookarr}}" wx:key="idd">
-        <view class="weui-form-preview" bindtap='viewtap' data-id="{{item.href}}">
-            <view class="weui-form-preview__hd">
+        <view class="weui-form-preview view_height" bindtap='viewtap' data-id="{{item.href}}">
+            <view class="weui-form-preview__hd" style="line-height:1em">
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label view1">{{item.date}}</view>
                     <view class='text view2'>{{item.title}}</view>

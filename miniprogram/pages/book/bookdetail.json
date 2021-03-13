@@ -1,4 +1,7 @@
 {
   "navigationBarBackgroundColor": "#cccfff",
-  "navigationBarTextStyle": "black"
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "mp-loading": "weui-miniprogram/loading/loading"
+  }
 }

@@ -6,44 +6,25 @@
 <view class='center'>
   <image class='image_logo' src="../../images/prologo.jpg" />
 </view>
-
-<view class="page">
-
-  <view class="page__bd_book">
-    <view class="weui-search-bar radius_bar">
-      <view class="weui-search-bar__form radius_bar">
-        <view class="weui-search-bar__box">
-          <icon class="weui-icon-search_in-box radius_bar" type="search" size="17"></icon>
-          <input type="text" class="weui-search-bar__input" style="font-size:19px" value="{{page_bookname}}"
-            focus="{{inputShowed}}" bindinput="inputTyping" />
-          <view class="weui-icon-clear" wx:if="{{page_bookname.length > 0}}" bindtap="clearInput">
-            <icon type="clear" size="17"></icon>
-          </view>
-        </view>
-        <label class="weui-search-bar__label radius_bar" hidden="{{inputShowed}}" bindtap="showInput">
-          <icon class="weui-icon-search" type="search" size="17"></icon>
-          <view class="weui-search-bar__text" style="font-size:16px">输入关键字查询</view>
-        </label>
-      </view>
-      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
-    </view>
-  </view>
+<view class="page__bd_book">
+<mp-searchbar bindinput="inputTyping" bindclear="clearInput" ></mp-searchbar>
 </view>
 
-<view class='.btnview'>
+<view class='btnview'>
   <button class="search-log" wx:for-item="searchLog" wx:for="{{searchLogList}}" wx:key="searchLogListId"
     bindtap="searchDataByLog" data-log="{{searchLog}}">
     {{searchLog}}
   </button>
 </view>
 
-
 <view class='book_button'>
   <view class='btnview_search'>
+    
     <button class='btn' bindtap='buttonreq'><text style='font-weight:bold'>查询</text></button>
   </view>
 </view>
 
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
 
 <view class="weui-footer weui-footer_fixed-bottom">
   <view class="weui-footer__text">技术支持: 东北电力大学因特雷工作室</view>

@@ -1,7 +1,8 @@
 Page({
   data: {
     info_data: {},
-    info_location: []
+    info_location: [],
+    info_list: []
   },
   onLoad: function(options) {
     var that = this;
@@ -20,54 +21,33 @@ Page({
         "Content-Type": "application/x-www-form-urlencoded"
       },
       success: function(res) {
-        //console.log(res['data'][0])
-        //console.log(res['data'][1])
-        //console.log(res['data'][2])
-        //getDataArr(res)
-        console.log(res['data'])
-        console.log(res['data'].length)
-        var dic = {}
-        dic = res['data'][res['data'].length - 1]
+        var dic = res['data'][res['data'].length - 1]
+        var isbn_time = dic["ISBN及定价:"].split('/',2);
+        dic["isbn"] = isbn_time[0];
+        dic["price"] = isbn_time[1];
+        dic["theme"] = dic["学科主题:"].split('-');
+        var name_author = dic["题名/责任者:"].split('/',2);
+        dic['name'] = name_author[0];
+        dic['author'] = name_author[1];
         var length = res['data'].length - 1
-        var list1 = []
-        list1 = res['data']
-        list1.splice(length, 1);
-        //console.log(dic)
-        //console.log(list1)
-        var info_data = that.data.info_data;
-        if (info_data["学科主题:"] != "") {
-          key_word = info_data["学科主题:"];
-        }
-        if (info_data["丛编项:"] != "") {
-          series = info_data["丛编项:"];
-        }
-        if (info_data["中图法分类号:"] != "") {
-          coden = info_data["中图法分类号:"];
+        var book_item = res['data']
+        book_item.splice(length, 1);  //删除一个元素
+        console.log(dic)
+        console.log(book_item)
+        //var info_data = that.data.info_data;
+        var verify = ["学科主题:","丛编项:","中图法分类号:"]
+        for(var i in verify){
+          if (!dic.hasOwnProperty(verify[i])) {
+            dic[verify[i]] = "Null";
+          }
         }
         that.setData({
           info_data: dic,
-          info_location: list1[0]
+          info_location: book_item[0],
+          info_list: dic["theme"]
         })
       }
     })
-    /*
-    wx.request({
-      url: 'https://neepupro.mynatapp.cc/tap_intel',
-      data: {
-        openid: getApp().globalData.openid,
-        key_word: key_word,
-        series: series,
-        coden: coden
-      },
-      method: "POST",
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      success: function(res) {
-        console.log(res);
-      }
-    })
-    */
   },
   onReady: function() {
     // Do something when page ready. 

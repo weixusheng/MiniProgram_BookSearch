@@ -1,51 +1,61 @@
-page{
-  background-color:#f4f4f4;
+page {
+  background-color: #f4f4f4;
 }
 
-.btn{
-width:400rpx;
-font-size: 13px;
-border-radius: 100rpx;
-color: #4f6b72;
-background-color: #cae8ea;
-} 
-.sideview{
+.btn {
+  width: 400rpx;
+  font-size: 13px;
+  border-radius: 100rpx;
+  color: #4f6b72;
+  background-color: #cae8ea;
+}
+
+.sideview {
   display: flex;
   flex-direction: row;
   padding: 10rpx;
-  
+
 }
 
-.text{
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    white-space:nowrap; 
-}
-.view{
-     padding-bottom: 0px;
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.view1{
-     float: right;
-     margin-right: 0px;
-     font-size: 12px;
+.view {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.view2{
-     text-align: left;
-     font-size: 13px;
+.view_height{
+  height: 50px;
 }
 
-.tlt{
+.view1 {
+  float: right;
+  margin-right: 0px;
+  font-size: 12px;
+}
+
+.view2 {
+  text-align: left;
+  font-size: 13px;
+}
+
+.tlt {
   font-size: 30rpx;
   padding: 20rpx;
   text-align: center;
 }
-.lin{
+
+.lin {
   height: 2rpx;
-   background-color: cadetblue;
+  background-color: cadetblue;
 }
-.page{
+
+.page {
   width: 100%;
   margin: 0 auto;
 }
