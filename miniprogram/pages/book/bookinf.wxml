@@ -29,15 +29,24 @@
         </view>
         <view class="weui-form-preview__item">
           <view class="weui-form-preview__label">学科主题:</view>
-          <view class="theme_log" wx:for="{{info_list}}">
+          <view class="theme_log" wx:for="{{info_list}}" wx:key="key">
             {{item}}
           </view>
         </view>
       </view>
+      <view>
+        <button>
+          <image class="fav_img" src="../../images/h1.png"></image>
+          添加收藏
+        </button>
+      </view>
       <view class="weui-panel__bd">
         <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title_book weui-media-box__title_in-text info_title" >
-            <text>提要文摘附注:</text>
+          <view class="weui-media-box__title_book weui-media-box__title_in-text">
+            <view class="info_title">
+              <text>提要文摘附注:</text>
+              <button>添加收藏</button>
+            </view>
           </view>
           <view class="weui-media-box__desc_book" style="text-indent:2em">{{info_data["提要文摘附注:"]}}</view>
           <view class="weui-media-box__info small_text">
@@ -49,7 +58,7 @@
       </view>
     </view>
   </view>
-  <view class="page__bd" wx:for="{{info_location}}" wx:key="*this">
+  <view class="page__bd" wx:for="{{info_location}}" wx:key="key">
     <view class="weui-form-preview ">
       <view class="weui-form-preview__hd color_panel">
         <view class="weui-form-preview__item ">

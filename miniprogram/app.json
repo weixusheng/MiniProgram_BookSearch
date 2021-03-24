@@ -9,7 +9,8 @@
     "pages/notice/notice_main",
     "pages/notice/notice_content",
     "pages/about/about",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/favbook/favbook"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -40,7 +41,7 @@
         "selectedIconPath": "images/tabbar/notice_s.png"
       },
       {
-        "pagePath": "pages/notice/notice_main",
+        "pagePath": "pages/favbook/favbook",
         "text": "收藏列表",
         "iconPath": "images/tabbar/heart.png",
         "selectedIconPath": "images/tabbar/heart_s.png"
